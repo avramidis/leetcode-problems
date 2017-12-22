@@ -42,14 +42,19 @@ int main()
 	// Generate input data
 	std::vector<int> input;
 
-	input.push_back(-2);
-	input.push_back(7);
-	input.push_back(-7);
-	input.push_back(-11);
-	input.push_back(15);
+	//input.push_back(-2);
+	//input.push_back(7);
+	//input.push_back(-7);
+	//input.push_back(-11);
+	//input.push_back(15);
+
+	for (int i = 0; i < 100; i++)
+	{
+		input.push_back(i);
+	}
 
 	auto start = std::chrono::system_clock::now();
-	std::vector<int> results = solution.twoSum(input, -9);
+	std::vector<int> results = solution.twoSum(input, 99+98);
 	auto end = std::chrono::system_clock::now();
 
 	std::chrono::duration<double> elapsed_seconds = end - start;
