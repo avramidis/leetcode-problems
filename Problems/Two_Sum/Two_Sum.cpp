@@ -64,7 +64,12 @@ TEST_CASE("Two sum")
 		input.push_back(3);
 		input.push_back(90);
 
-		std::vector<int> results = solution.twoSum(input, 0);
+		std::vector<int> results;
+
+		BENCHMARK("Calculate the two sum") 
+		{
+			results = solution.twoSum(input, 0);
+		}
 
 		REQUIRE((results[0] == 0 && results[1] == 2));
 	}
