@@ -25,7 +25,6 @@ public:
 		int carry = 0;
 
 		while (temp_l1 != NULL || temp_l2 != NULL) {
-			
 			sum = 0;
 
 			if (temp_l1 != NULL) {
@@ -65,7 +64,7 @@ public:
 				}
 			}
 
-			if (temp_l1 != NULL && temp_l2 != NULL) {
+			if (temp_l1 != NULL || temp_l2 != NULL) {
 				temp_result->next = new ListNode(0);
 				temp_result = temp_result->next;
 			}
@@ -133,7 +132,12 @@ TEST_CASE("Add two numbers")
 		l2->next = new ListNode(6);
 		l2->next->next = new ListNode(4);
 
-		ListNode* result = solution.addTwoNumbers(l1, l2);
+		ListNode* result = 0;
+
+		BENCHMARK("Calculate the add two numbers")
+		{
+			result = solution.addTwoNumbers(l1, l2);
+		}
 
 		std::cout << std::endl;
 		std::cout << "Solution" << std::endl;
@@ -155,7 +159,12 @@ TEST_CASE("Add two numbers")
 		ListNode* l1 = new ListNode(5);
 		ListNode* l2 = new ListNode(5);
 
-		ListNode* result = solution.addTwoNumbers(l1, l2);
+		ListNode* result = 0;
+
+		BENCHMARK("Calculate the add two numbers")
+		{
+			result = solution.addTwoNumbers(l1, l2);
+		}
 
 		std::cout << std::endl;
 		std::cout << "Solution" << std::endl;
@@ -178,8 +187,13 @@ TEST_CASE("Add two numbers")
 		l1->next = new ListNode(8);
 
 		ListNode* l2 = new ListNode(0);
+		
+		ListNode* result = 0;
 
-		ListNode* result = solution.addTwoNumbers(l1, l2);
+		BENCHMARK("Calculate the add two numbers")
+		{
+			result = solution.addTwoNumbers(l1, l2);
+		}
 
 		std::cout << std::endl;
 		std::cout << "Solution" << std::endl;
