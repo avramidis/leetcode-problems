@@ -15,17 +15,6 @@ class Solution {
 public:
 	ListNode * addTwoNumbers(ListNode* l1, ListNode* l2) {
 
-		std::cout << "l1" << std::endl;
-		std::cout << l1->val << std::endl;
-		std::cout << l1->next->val << std::endl;
-		std::cout << l1->next->next->val << std::endl;
-
-		std::cout << std::endl;
-		std::cout << "l2" << std::endl;
-		std::cout << l2->val << std::endl;
-		std::cout << l2->next->val << std::endl;
-		std::cout << l2->next->next->val << std::endl;
-
 		ListNode* result = new ListNode(0);
 		ListNode* temp_result = result;
 
@@ -96,13 +85,15 @@ TEST_CASE("Add two numbers")
 		//Output : 7 -> 0 -> 8
 		//Explanation : 342 + 465 = 807.
 
-		ListNode* l1 = new ListNode(2);
-		l1->next = new ListNode(4);
-		l1->next->next = new ListNode(3);
+		//ListNode* l1 = new ListNode(2);
+		//l1->next = new ListNode(4);
+		//l1->next->next = new ListNode(3);
+		//ListNode* l2 = new ListNode(5);
+		//l2->next = new ListNode(6);
+		//l2->next->next = new ListNode(4);
 
+		ListNode* l1 = new ListNode(5);
 		ListNode* l2 = new ListNode(5);
-		l2->next = new ListNode(6);
-		l2->next->next = new ListNode(4);
 
 		ListNode* result = solution.addTwoNumbers(l1, l2);
 
