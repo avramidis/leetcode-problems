@@ -15,13 +15,16 @@ class Solution {
 public:
 	ListNode * addTwoNumbers(ListNode* l1, ListNode* l2) {
 
-		//std::cout << l1->val << std::endl;
-		//std::cout << l1->next->val << std::endl;
-		//std::cout << l1->next->next->val << std::endl;
+		std::cout << "l1" << std::endl;
+		std::cout << l1->val << std::endl;
+		std::cout << l1->next->val << std::endl;
+		std::cout << l1->next->next->val << std::endl;
 
-		//std::cout << l2->val << std::endl;
-		//std::cout << l2->next->val << std::endl;
-		//std::cout << l2->next->next->val << std::endl;
+		std::cout << std::endl;
+		std::cout << "l2" << std::endl;
+		std::cout << l2->val << std::endl;
+		std::cout << l2->next->val << std::endl;
+		std::cout << l2->next->next->val << std::endl;
 
 		ListNode* result = new ListNode(0);
 		ListNode* temp_result = result;
@@ -29,11 +32,13 @@ public:
 		ListNode* temp_l1 = l1;
 		ListNode* temp_l2 = l2;
 
-		int sum = 0;
+		int sum;
 		int carry = 0;
 
 		while (temp_l1 != NULL || temp_l2 != NULL) {
 			
+			sum = 0;
+
 			if (temp_l1 != NULL) {
 				sum = sum + temp_l1->val;
 			}
@@ -91,7 +96,7 @@ TEST_CASE("Add two numbers")
 		//Output : 7 -> 0 -> 8
 		//Explanation : 342 + 465 = 807.
 
-		ListNode* l1 = new ListNode(7);
+		ListNode* l1 = new ListNode(2);
 		l1->next = new ListNode(4);
 		l1->next->next = new ListNode(3);
 
@@ -101,6 +106,8 @@ TEST_CASE("Add two numbers")
 
 		ListNode* result = solution.addTwoNumbers(l1, l2);
 
+		std::cout << std::endl;
+		std::cout << "Solution" << std::endl;
 		std::cout << result->val << std::endl;
 		std::cout << result->next->val << std::endl;
 		std::cout << result->next->next->val << std::endl;
