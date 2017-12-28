@@ -7,10 +7,7 @@ class Solution {
 public:
 	bool uniquestring(std::string s) {
 		for (size_t i = 0; i < s.size(); i++) {
-			for (size_t j = 0; j < s.size(); j++) {
-				if (i == j) {
-					continue;
-				}
+			for (size_t j = i + 1; j < s.size(); j++) {
 				if (s[i] == s[j]) {
 					return false;
 				}
@@ -34,9 +31,13 @@ public:
 		
 		for (size_t i = 0; i < s.size(); i++) {
 			for (size_t j = i+1; j < s.size(); j++) {
-				if (uniquestring(s.substr(i, j - i + 1))) {
-					if (s.substr(i, j - i + 1).size() > result) {
-						result = s.substr(i, j - i + 1).size();
+				std::string temp_s = s.substr(i, j - i + 1);
+				if (uniquestring(temp_s)) {
+					if (temp_s.size() > result) {
+						result = temp_s.size();
+						if (result > s.size() - i) {
+							return result;
+						}
 					}
 				}
 			}
@@ -52,17 +53,32 @@ TEST_CASE("Unique characters in string")
 
 	SECTION("Input set 1") {
 		std::string input = "abcabcbb";
-		REQUIRE(solution.uniquestring(input) == false);
+		bool result = false;
+		BENCHMARK("Check if the string is made of unique characters")
+		{
+			result = solution.uniquestring(input);
+		}
+		REQUIRE(result == false);
 	}
 
 	SECTION("Input set 2") {
 		std::string input = "a";
-		REQUIRE(solution.uniquestring(input) == true);
+		bool result = false;
+		BENCHMARK("Check if the string is made of unique characters")
+		{
+			result = solution.uniquestring(input);
+		}
+		REQUIRE(result == true);
 	}
 
 	SECTION("Input set 2") {
 		std::string input = "au";
-		REQUIRE(solution.uniquestring(input) == true);
+		bool result = false;
+		BENCHMARK("Check if the string is made of unique characters")
+		{
+			result = solution.uniquestring(input);
+		}
+		REQUIRE(result == true);
 	}
 }
 
@@ -72,37 +88,61 @@ TEST_CASE("Two sum")
 
 	SECTION("Input set 1") {
 		std::string input = "abcabcbb";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 3);
 	}
 
 	SECTION("Input set 2") {
 		std::string input = "bbbbb";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 1);
 	}
 
 	SECTION("Input set 3") {
 		std::string input = "pwwkew";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 3);
 	}
 
 	SECTION("Input set 4") {
 		std::string input = "c";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 1);
 	}
 
 	SECTION("Input set 5") {
 		std::string input = "au";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 2);
 	}
 
 	SECTION("Input set 6") {
 		std::string input = "";
-		int result = solution.lengthOfLongestSubstring(input);
+		int result = 0;
+		BENCHMARK("Calculate length of the longest substring with unique characters")
+		{
+			result = solution.lengthOfLongestSubstring(input);
+		}
 		REQUIRE(result == 0);
 	}
 }
