@@ -6,8 +6,8 @@
 class Solution {
 public:
 	bool uniquestring(std::string s, int start, int end) {
-		for (size_t i = start; i < end; i++) {
-			for (size_t j = i + 1; j <= end; j++) {
+		for (int i = start; i < end; i++) {
+			for (int j = i + 1; j <= end; j++) {
 				if (s[i] == s[j]) {
 					return false;
 				}
