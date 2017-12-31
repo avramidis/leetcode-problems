@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LongestSubstringWithoutRepe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MedianofTwoSortedArrays", "MedianofTwoSortedArrays\MedianofTwoSortedArrays.vcxproj", "{B68C20A1-CD14-4B1F-9C83-1794CF441D42}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "007_ReverseInteger", "007_ReverseInteger\007_ReverseInteger.vcxproj", "{AA6B124C-1EF4-4214-87EE-8CC9F850E091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{B68C20A1-CD14-4B1F-9C83-1794CF441D42}.Release|x64.Build.0 = Release|x64
 		{B68C20A1-CD14-4B1F-9C83-1794CF441D42}.Release|x86.ActiveCfg = Release|Win32
 		{B68C20A1-CD14-4B1F-9C83-1794CF441D42}.Release|x86.Build.0 = Release|Win32
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Debug|x64.ActiveCfg = Debug|x64
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Debug|x64.Build.0 = Debug|x64
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Debug|x86.Build.0 = Debug|Win32
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Release|x64.ActiveCfg = Release|x64
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Release|x64.Build.0 = Release|x64
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Release|x86.ActiveCfg = Release|Win32
+		{AA6B124C-1EF4-4214-87EE-8CC9F850E091}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
