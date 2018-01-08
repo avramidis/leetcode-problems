@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "026_RemoveDuplicatesfromSor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "027_RemoveElement", "027_RemoveElement\027_RemoveElement.vcxproj", "{DDBBC790-7023-4825-903D-E1E2EB65CC56}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "028_ImplementstrStr", "028_ImplementstrStr\028_ImplementstrStr.vcxproj", "{D17A99E3-3671-4632-AAD0-145D535D21AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{DDBBC790-7023-4825-903D-E1E2EB65CC56}.Release|x64.Build.0 = Release|x64
 		{DDBBC790-7023-4825-903D-E1E2EB65CC56}.Release|x86.ActiveCfg = Release|Win32
 		{DDBBC790-7023-4825-903D-E1E2EB65CC56}.Release|x86.Build.0 = Release|Win32
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Debug|x64.ActiveCfg = Debug|x64
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Debug|x64.Build.0 = Debug|x64
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Debug|x86.ActiveCfg = Debug|Win32
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Debug|x86.Build.0 = Debug|Win32
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Release|x64.ActiveCfg = Release|x64
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Release|x64.Build.0 = Release|x64
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Release|x86.ActiveCfg = Release|Win32
+		{D17A99E3-3671-4632-AAD0-145D535D21AE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
