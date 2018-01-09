@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "028_ImplementstrStr", "028_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "035_SearchInsertPosition", "035_SearchInsertPosition\035_SearchInsertPosition.vcxproj", "{46058434-888B-4851-B5CF-87DE3EE43809}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "038_CountandSay", "038_CountandSay\038_CountandSay.vcxproj", "{BF41F444-EB69-4453-9922-3023FAB97037}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{46058434-888B-4851-B5CF-87DE3EE43809}.Release|x64.Build.0 = Release|x64
 		{46058434-888B-4851-B5CF-87DE3EE43809}.Release|x86.ActiveCfg = Release|Win32
 		{46058434-888B-4851-B5CF-87DE3EE43809}.Release|x86.Build.0 = Release|Win32
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Debug|x64.ActiveCfg = Debug|x64
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Debug|x64.Build.0 = Debug|x64
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Debug|x86.Build.0 = Debug|Win32
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Release|x64.ActiveCfg = Release|x64
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Release|x64.Build.0 = Release|x64
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Release|x86.ActiveCfg = Release|Win32
+		{BF41F444-EB69-4453-9922-3023FAB97037}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
